@@ -1,0 +1,164 @@
+1. Escribir y ejecutar el pseudocódigo de PSelnt para determinar el porcentaje de hombres y mujeres de un grupo. Los valores enteros de hombres y mujeres se ingresa por teclado. Generar el diagrama de flujo.
+
+Proceso PorcentajeGenero
+    Definir hombres, mujeres, total Como Entero
+    Definir porHombres, porMujeres Como Real
+    
+    Escribir "Ingrese cantidad de hombres:"
+    Leer hombres
+    
+    Escribir "Ingrese cantidad de mujeres:"
+    Leer mujeres
+    
+    total <- hombres + mujeres
+    
+    porHombres <- (hombres * 100) / total
+    porMujeres <- (mujeres * 100) / total
+    
+    Escribir "Porcentaje de hombres: ", porHombres, "%"
+    Escribir "Porcentaje de mujeres: ", porMujeres, "%"
+FinProceso
+
+2. Escribir y ejecutar el pseudocódigo de PSelnt para determinar la hipotenusa de un triángulo, dados su dos catetos.
+
+Proceso Hipotenusa
+    Definir cateto1, cateto2, hipotenusa Como Real
+    
+    Escribir "Ingrese el primer cateto:"
+    Leer cateto1
+    
+    Escribir "Ingrese el segundo cateto:"
+    Leer cateto2
+    
+    hipotenusa <- RC( (cateto1^2) + (cateto2^2) )
+    
+    Escribir "La hipotenusa es: ", hipotenusa
+FinProceso
+
+3. Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde. Por ejemplo: 1000 minutos son 16 horas y 40 minutos.
+
+Proceso ConvertirMinutos
+    Definir minutos, horas, resto Como Entero
+    
+    Escribir "Ingrese la cantidad de minutos:"
+    Leer minutos
+    
+    horas <- minutos / 60
+    resto <- minutos MOD 60
+    
+    Escribir minutos, " minutos son ", horas, " horas y ", resto, " minutos."
+FinProceso
+
+4. Dos vehículos viajan a diferentes velocidades (v1 y v2) y están distanciados por una distancia d. El que está detrás viaja a una velocidad mayor. Se pide hacer un algoritmo para ingresar la distancia entre los dos vehículos (km) y sus respectivas velocidades (km/h) y con esto determinar y mostrar en que tiempo (minutos) alcanzará el vehículo más rápido al otro.
+
+Proceso AlcanceVehiculos
+    Definir v1, v2, d, tiempoHoras, tiempoMinutos Como Real
+    
+    Escribir "Ingrese velocidad del primer vehículo (km/h):"
+    Leer v1
+    
+    Escribir "Ingrese velocidad del segundo vehículo (km/h):"
+    Leer v2
+    
+    Escribir "Ingrese distancia entre ellos (km):"
+    Leer d
+    
+    Si v1 > v2 Entonces
+        tiempoHoras <- d / (v1 - v2)
+    Sino
+        tiempoHoras <- d / (v2 - v1)
+    FinSi
+    
+    tiempoMinutos <- tiempoHoras * 60
+    
+    Escribir "Tiempo en que se alcanzan: ", tiempoMinutos, " minutos"
+FinProceso
+
+5. Dado un número de dos cifras, diseñe un algoritmo que permita obtener el número invertido. Ejemplo, si se introduce 23 que muestre 32.
+
+Proceso InvertirNumero
+    Definir num, decenas, unidades, invertido Como Entero
+    
+    Escribir "Ingrese un número de dos cifras:"
+    Leer num
+    
+    decenas <- num / 10
+    unidades <- num MOD 10
+    
+    invertido <- (unidades * 10) + decenas
+    
+    Escribir "Número invertido: ", invertido
+FinProceso
+
+6. Realizar un algoritmos que lea un número y que muestre su raíz cuadrada y su raíz cúbica. PSelnt no tiene ninguna función predefinida que permita calcular la raíz cúbica, ¿Cómo se puede calcular?
+
+Proceso Raices
+    Definir num, raizCuadrada, raizCubica Como Real
+    
+    Escribir "Ingrese un número:"
+    Leer num
+    
+    raizCuadrada <- RC(num)
+    raizCubica <- num^(1/3)
+    
+    Escribir "Raíz cuadrada: ", raizCuadrada
+    Escribir "Raíz cúbica: ", raizCubica
+FinProceso
+
+7. Consultar funciones sobre cadenas de texto y desarrollar el código para:
+
+Ingresar y calcular la longitud de una cadena
+
+Determinar el primer carácter de la cadena
+
+Determinar el último carácter de la cadena
+
+Cambiar la cadena a mayúsculas
+
+Concatenar una cadena
+
+Convertir una cadena numérica a formato número
+
+Imprimir en pantalla una cadena concatenada con texto y número.
+
+Proceso FuncionesCadenas
+    Definir texto, texto2, textoConcatenado Como Cadena
+    Definir longitud Como Entero
+    Definir primerCaracter, ultimoCaracter Como Cadena
+    Definir numero Como Real
+    
+    Escribir "Ingrese una cadena de texto:"
+    Leer texto
+    
+    // Longitud
+    longitud <- Longitud(texto)
+    Escribir "Longitud de la cadena: ", longitud
+    
+    // Primer carácter
+    primerCaracter <- SubCadena(texto, 0, 0)
+    Escribir "Primer carácter: ", primerCaracter
+    
+    // Último carácter
+    ultimoCaracter <- SubCadena(texto, longitud - 1, longitud - 1)
+    Escribir "Último carácter: ", ultimoCaracter
+    
+    // Convertir a mayúsculas
+    Escribir "Cadena en mayúsculas: ", Mayusculas(texto)
+    
+    // Concatenar cadenas
+    Escribir "Ingrese otra cadena:"
+    Leer texto2
+    
+    textoConcatenado <- Concatenar(texto, texto2)
+    Escribir "Cadena concatenada: ", textoConcatenado
+    
+    // Convertir cadena a número
+    Escribir "Ingrese un número en formato texto:"
+    Leer texto
+    
+    numero <- ConvertirANumero(texto)
+    Escribir "Número convertido: ", numero
+    
+    // Concatenar texto con número
+    Escribir "Resultado final: ", "El número es ", numero
+FinProceso
