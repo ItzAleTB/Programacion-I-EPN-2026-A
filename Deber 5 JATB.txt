@@ -83,10 +83,10 @@ Proceso InvertirNumero
         Escribir "Ingrese un número de dos cifras:"
         Leer num
         
-        Si num < 10 O num > 99 Entonces
+        Si NO((num >= 10 Y num <= 99) O (num <= -10 Y num >= -99)) Entonces
             Escribir "Error: Debe ingresar un número de dos cifras"
         FinSi
-    Hasta Que num >= 10 Y num <= 99
+    Hasta Que (num >= 10 Y num <= 99) O (num <= -10 Y num >= -99)
     
     decenas <- trunc(num / 10)
     unidades <- num MOD 10
