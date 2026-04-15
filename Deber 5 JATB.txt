@@ -82,12 +82,16 @@ Proceso InvertirNumero
     Escribir "Ingrese un número de dos cifras:"
     Leer num
     
-    decenas <- num / 10
-    unidades <- num MOD 10
-    
-    invertido <- (unidades * 10) + decenas
-    
-    Escribir "Número invertido: ", invertido
+    Si num >= 10 Y num <= 99 Entonces
+        decenas <- num / 10
+        unidades <- num MOD 10
+        
+        invertido <- (unidades * 10) + decenas
+        
+        Escribir "Número invertido: ", invertido
+    SiNo
+        Escribir "Error: Debe ingresar un número de dos cifras"
+    FinSi
 FinProceso
 
 6. Realizar un algoritmos que lea un número y que muestre su raíz cuadrada y su raíz cúbica. PSelnt no tiene ninguna función predefinida que permita calcular la raíz cúbica, ¿Cómo se puede calcular?
