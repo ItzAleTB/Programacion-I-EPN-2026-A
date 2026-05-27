@@ -1,0 +1,19 @@
+//Escribir el pseudocódigo para verificar si un número entero es positivo, negativo o cero.
+
+Algoritmo VerificarNumero
+    Definir num Como Entero
+    
+    Escribir "Ingrese un número entero:"
+    Leer num
+    
+    Si num > 0 Entonces
+        Escribir "El número es positivo"
+    Sino
+        Si num < 0 Entonces
+            Escribir "El número es negativo"
+        Sino
+            Escribir "El número es cero"
+        Fin Si 
+    Fin Si      
+    
+Fin Algoritmo

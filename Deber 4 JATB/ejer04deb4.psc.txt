@@ -1,0 +1,39 @@
+//Escribir el pseudocódigo para verificar el mayor de 3 números.
+
+Algoritmo VerificarMayor
+    Definir num1, num2, num3 Como Real
+    
+    Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+    Escribir "Ingrese el tercer número:"
+    Leer num3
+    
+    Si num1 == num2 Y num2 == num3 Entonces
+        Escribir "Los tres números son iguales."
+    Sino
+        Si num1 > num2 Y num1 > num3 Entonces
+            Escribir "El primer número es el mayor: ", num1
+        Sino 
+            Si num2 > num1 Y num2 > num3 Entonces
+                Escribir "El segundo número es el mayor: ", num2
+            Sino 
+                Si num3 > num1 Y num3 > num2 Entonces
+                    Escribir "El tercer número es el mayor: ", num3
+                Sino
+                    Si num1 == num2 Entonces
+                        Escribir "Empate en primer puesto: número 1 y número 2 con ", num1
+                    Sino 
+                        Si num1 == num3 Entonces
+                            Escribir "Empate en primer puesto: número 1 y número 3 con ", num1
+                        Sino
+                            Escribir "Empate en primer puesto: número 2 y número 3 con ", num2
+                        Fin Si
+                    Fin Si
+                Fin Si
+            Fin Si
+        Fin Si
+    Fin Si
+    
+Fin Algoritmo
