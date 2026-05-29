@@ -137,23 +137,23 @@ Imprimir en pantalla una cadena concatenada con texto y número.
 
 Algoritmo FuncionesCadenas
     Definir text, text2, textConcatenado Como Cadena
-    Definir longitud Como Entero
+    Definir longi Como Entero
     Definir primerCaracter, ultimoCaracter Como Cadena
     Definir numero Como Real
     
     Escribir "Ingrese una cadena de text:"
     Leer text
     
-    // Longitud
-    longitud <- Longitud(text)
-    Escribir "Longitud de la cadena: ", longitud
+    // longitud
+    longi <- longi(text)
+    Escribir "longi de la cadena: ", longi
     
     // Primer carácter
     primerCaracter <- SubCadena(text, 0, 0)
     Escribir "Primer carácter: ", primerCaracter
     
     // Último carácter
-    ultimoCaracter <- SubCadena(text, longitud - 1, longitud - 1)
+    ultimoCaracter <- SubCadena(text, longi - 1, longi - 1)
     Escribir "Último carácter: ", ultimoCaracter
     
     // Convertir a mayúsculas
