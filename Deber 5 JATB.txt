@@ -1,6 +1,6 @@
 1. Escribir y ejecutar el pseudocódigo de PSelnt para determinar el porcentaje de hombres y mujeres de un grupo. Los valores enteros de hombres y mujeres se ingresa por teclado. Generar el diagrama de flujo.
 
-Proceso PorcentajeGenero
+Algoritmo PorcentajeGenero
     Definir hombres, mujeres, total Como Entero
     Definir porHombres, porMujeres Como Real
     
@@ -17,11 +17,11 @@ Proceso PorcentajeGenero
     
     Escribir "Porcentaje de hombres: ", porHombres, "%"
     Escribir "Porcentaje de mujeres: ", porMujeres, "%"
-FinProceso
+FinAlgoritmo
 
 2. Escribir y ejecutar el pseudocódigo de PSelnt para determinar la hipotenusa de un triángulo, dados su dos catetos.
 
-Proceso Hipotenusa
+Algoritmo Hipotenusa
     Definir cateto1, cateto2, hipotenusa Como Real
     
     Escribir "Ingrese el primer cateto:"
@@ -33,11 +33,11 @@ Proceso Hipotenusa
     hipotenusa <- RC( (cateto1^2) + (cateto2^2) )
     
     Escribir "La hipotenusa es: ", hipotenusa
-FinProceso
+FinAlgoritmo
 
 3. Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde. Por ejemplo: 1000 minutos son 16 horas y 40 minutos.
 
-Proceso ConvertirMinutos
+Algoritmo ConvertirMinutos
     Definir minutos, horas, resto Como Entero
     
     Escribir "Ingrese la cantidad de minutos:"
@@ -47,11 +47,11 @@ Proceso ConvertirMinutos
     resto <- minutos MOD 60
     
     Escribir minutos, " minutos son ", horas, " horas y ", resto, " minutos."
-FinProceso
+FinAlgoritmo
 
 4. Dos vehículos viajan a diferentes velocidades (v1 y v2) y están distanciados por una distancia d. El que está detrás viaja a una velocidad mayor. Se pide hacer un algoritmo para ingresar la distancia entre los dos vehículos (km) y sus respectivas velocidades (km/h) y con esto determinar y mostrar en que tiempo (minutos) alcanzará el vehículo más rápido al otro.
 
-Proceso AlcanceVehiculos
+Algoritmo AlcanceVehiculos
     Definir v1, v2, d, tiempoHoras, tiempoMinutos Como Real
     
     Escribir "Ingrese velocidad del primer vehículo (km/h):"
@@ -72,11 +72,11 @@ Proceso AlcanceVehiculos
     tiempoMinutos <- tiempoHoras * 60
     
     Escribir "Tiempo en que se alcanzan: ", tiempoMinutos, " minutos"
-FinProceso
+FinAlgoritmo
 
 5. Dado un número de dos cifras, diseñe un algoritmo que permita obtener el número invertido. Ejemplo, si se introduce 23 que muestre 32.
 
-Proceso InvertirNumero
+Algoritmo InvertirNumero
     Definir num, decenas, unidades, invertido Como Entero
     
     Repetir
@@ -94,11 +94,11 @@ Proceso InvertirNumero
     invertido <- (unidades * 10) + decenas
     
     Escribir "Número invertido: ", invertido
-FinProceso
+FinAlgoritmo
 
 6. Realizar un algoritmos que lea un número y que muestre su raíz cuadrada y su raíz cúbica. PSelnt no tiene ninguna función predefinida que permita calcular la raíz cúbica, ¿Cómo se puede calcular?
 
-Proceso InvertirNumero
+Algoritmo InvertirNumero
     Definir num, raizCuadrada, raizCubica Como Real
     
     
@@ -117,7 +117,7 @@ Proceso InvertirNumero
         Escribir "Raíz cúbica: ", raizCubica
     FinSi
     
-FinProceso
+FinAlgoritmo
 
 7. Consultar funciones sobre cadenas de texto y desarrollar el código para:
 
@@ -135,7 +135,7 @@ Convertir una cadena numérica a formato número
 
 Imprimir en pantalla una cadena concatenada con texto y número.
 
-Proceso FuncionesCadenas
+Algoritmo FuncionesCadenas
     Definir texto, texto2, textoConcatenado Como Cadena
     Definir longitud Como Entero
     Definir primerCaracter, ultimoCaracter Como Cadena
@@ -175,4 +175,4 @@ Proceso FuncionesCadenas
     
     // Concatenar texto con número
     Escribir "Resultado final: ", "El número es ", numero
-FinProceso
+FinAlgoritmo
