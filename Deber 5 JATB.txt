@@ -136,43 +136,43 @@ Convertir una cadena numérica a formato número
 Imprimir en pantalla una cadena concatenada con texto y número.
 
 Algoritmo FuncionesCadenas
-    Definir texto, texto2, textoConcatenado Como Cadena
+    Definir text, text2, textConcatenado Como Cadena
     Definir longitud Como Entero
     Definir primerCaracter, ultimoCaracter Como Cadena
     Definir numero Como Real
     
-    Escribir "Ingrese una cadena de texto:"
-    Leer texto
+    Escribir "Ingrese una cadena de text:"
+    Leer text
     
     // Longitud
-    longitud <- Longitud(texto)
+    longitud <- Longitud(text)
     Escribir "Longitud de la cadena: ", longitud
     
     // Primer carácter
-    primerCaracter <- SubCadena(texto, 0, 0)
+    primerCaracter <- SubCadena(text, 0, 0)
     Escribir "Primer carácter: ", primerCaracter
     
     // Último carácter
-    ultimoCaracter <- SubCadena(texto, longitud - 1, longitud - 1)
+    ultimoCaracter <- SubCadena(text, longitud - 1, longitud - 1)
     Escribir "Último carácter: ", ultimoCaracter
     
     // Convertir a mayúsculas
-    Escribir "Cadena en mayúsculas: ", Mayusculas(texto)
+    Escribir "Cadena en mayúsculas: ", Mayusculas(text)
     
     // Concatenar cadenas
     Escribir "Ingrese otra cadena:"
-    Leer texto2
+    Leer text2
     
-    textoConcatenado <- Concatenar(texto, texto2)
-    Escribir "Cadena concatenada: ", textoConcatenado
+    textConcatenado <- Concatenar(text, text2)
+    Escribir "Cadena concatenada: ", textConcatenado
     
     // Convertir cadena a número
-    Escribir "Ingrese un número en formato texto:"
-    Leer texto
+    Escribir "Ingrese un número en formato text:"
+    Leer text
     
-    numero <- ConvertirANumero(texto)
+    numero <- ConvertirANumero(text)
     Escribir "Número convertido: ", numero
     
-    // Concatenar texto con número
+    // Concatenar text con número
     Escribir "Resultado final: ", "El número es ", numero
 FinAlgoritmo
